@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+/*NAVIGATION BAR*/
+
+#navbar {
+    width: 300px;
+    border-right: 3px solid rgba(0, 22, 22, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#navbar header {
+    margin: 10px;
+    color: #000;
+    font-size: 29px;
+    text-align: center;
+    line-height: 43px;
+}
+
+#navbar ul {
+    height: 88%;
+    margin: 16px 0;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar ul li {
+    border-top: 1px solid rgb(77, 78, 83);
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 30px;
+    line-height: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar {
+        width: calc(100% - 20px);
+        height: 275px;
+        margin: 0 10px;
+        border: none;
+        position: static;
+    }
+
+    #navbar ul {
+        border: 1px solid rgb(77, 78, 83);
+    }
+}
+
+
+/*MAIN*/
+
+#main-doc {
+    width: calc(100% - 310px);
+    margin: 0 0 110px 310px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    #main-doc {
+        width: 100%;
+        margin: 20px 0 110px;
+    }
+}
+
+.main-section header {
+    color: #000;
+    font-size: 29px;
+    line-height: 43px;
+}
+
+.main-section article {
+    margin: 15px;
+}
+
+.main-section article p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.main-section > p {
+    margin: 16px 0;
+    line-height: 24px;
+}
+
+.main-section article > ul {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+.main-section article ul ul {
+    padding-left: 40px;
+}
+
+.main-section article ul li {
+    margin: 15px 0 0 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.main-section article code {
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    font-family: monospace;
+    font-size: 12.5px;
+    line-height: 25px;
+}
+
+.main-section article li a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+.main-section article li a:hover {
+    color: red;
+}
