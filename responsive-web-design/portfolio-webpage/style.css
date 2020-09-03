@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*NAVIGATION BAR*/
+
+#navbar {
+    width: 100%;
+    background-color: #be3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+}
+
+#navbar ul {
+    height: 65px;
+    margin-right: 18.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 18.5px;
+    color: #f0f0f0;
+    font-size: 20.5px;
+    line-height: 28.5px;
+}
+
+#navbar ul li a:hover {
+    background-color: #45567d;
+}
+
+
+/*WELCOME SECTION*/
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55.6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 78px;
+}
+
+#welcome-section p {
+    color: #be3144;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 39px;
+}
+
+
+/*PROJECTS SECTION*/
+
+#projects {
+    width: 100%;
+    padding: 93px 18.5px;
+    background-color: #45567d;
+    text-align: center;
+}
+
+#projects h2 {
+    width: 640px;
+    margin: 0 auto 55.6px;
+    border-bottom: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 54.5px;
+}
+
+.projects-grid {
+    margin-bottom: 56px;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-columns: auto auto auto;
+}
+
+.project-tile {
+    border-radius: 2px;
+    background-color: #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile img {
+    display: block;
+    width: 100%;
+    height: calc(100% - 63px);
+    object-fit: cover;
+}
+
+.project-tile p {
+    width: 100%;
+    padding: 18.5px 5px;
+    color: rgb(240, 240, 240);
+    font-size: 18.5px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.project-tile span {
+    margin: 0 10px;
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+.project-tile:hover span{
+    color: #e5764e;
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .projects-grid {
+        grid-template-columns: auto;
+    }
+}
+
+
+#projects > a {
+    padding: 9px 18.5px;
+    background-color: #303841;
+    border-radius: 2px;
+    color: rgb(240, 240, 240);
+    font-size: 18.5px;
+    text-align: center;
+    transition: background-color 0.3s ease-out;
+}
+
+#projects > a i {
+    margin-left: 5px;
+    
+}
+
+#projects > a:hover {
+    background-color: #be3144;
+}
+
+#projects > a:hover i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+
+/*CONTACT SECTION*/
+
+#contact {
+    width: 100%;
+    height: 480px;
+    padding: 0 18.5px;
+    background-color: #303841;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact-section-header {
+    text-align: center;
+}
+
+#contact .contact-section-header h2 {
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55.6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 78px;
+}
+
+#contact .contact-section-header p {
+    color: #f0f0f0;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+#contact .contact-links {
+    margin-top: 37px;
+}
+
+#contact .contact-links a {
+    display: inline-block;
+    padding: 9px 18.5px;
+    color: #f0f0f0;
+    font-size: 22px;
+    line-height: 31px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+#contact .contact-links a:hover {
+    transform: translateY(8px);
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 120px;
+    padding: 18.5px;
+    background-color: #303841;
+    border-top: 4px solid #be3144;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    margin: 18.5px;
+    color: #f0f0f0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+footer a {
+    color: #f0f0f0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+}
